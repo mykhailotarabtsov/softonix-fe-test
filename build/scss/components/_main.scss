@@ -1,0 +1,96 @@
+.main {
+
+  border-bottom: 1px solid #f0f0f0;
+
+  &__header {
+    padding: 1.5625rem 0;
+  }
+
+  &__nav {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &__item.active {
+    .main__link {
+      color: #59b68b;
+    }
+  }
+
+  &__link {
+    color: #000000;
+    transition: color .15s;
+    padding: 0.5rem;
+  }
+  &__link:hover {
+    color: #59b68b;
+    text-decoration: none;
+  }
+
+  // Main Content
+
+  &__content__nav-active {
+    font-weight: 700;
+    margin-bottom: 1.875rem;
+  }
+
+  &__content__ul {
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  &__case__item {
+    background: url('../img/reishunger_thmb.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    padding: 9.375rem 0;
+    height: 100%;
+    color: #ffffff;
+    position: relative;
+    cursor: pointer;
+
+    &-text {
+      position: relative;
+      z-index: 10;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      position: absolute;
+      background: rgba(42, 28, 71, 1);
+      transition: all 0.6s;
+    }
+
+    &:hover {
+      &:after {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  // Different background color for case
+  &__case {
+    .container {
+      div:nth-of-type(1) {
+
+        div:nth-of-type(2) .main__case__item:after {
+          background: rgba(71, 150, 126, 1);
+        }
+      }
+      div:nth-of-type(2) {
+        div:nth-of-type(1) .main__case__item:after {
+          background: rgba(232, 62, 51, 1);
+        }
+        div:nth-of-type(2) .main__case__item:after {
+          background: rgba(133, 175, 48, 1);
+        }
+      }
+    }
+  }
+}

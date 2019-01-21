@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+#header .navbar {
+  padding-top: 0;
+  padding-bottom: 0; }
+  #header .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0; }
+  #header .navbar-toggler {
+    border: none;
+    outline: none; }
+
+#header .navbar-nav .nav-item {
+  transition: background-color 0.4s; }
+  #header .navbar-nav .nav-item .nav-link {
+    padding: 1.5625rem 0.9375rem;
+    color: #ffffff; }
+  #header .navbar-nav .nav-item .btn-outline-secondary {
+    border-color: #ffffff;
+    color: #ffffff; }
+  #header .navbar-nav .nav-item:hover {
+    background-color: #5cb68c; }
+
+#header .navbar-nav .nav-item.active {
+  background-color: #5cb68c;
+  height: calc(100% + 1rem); }
+
+.main {
+  border-bottom: 1px solid #f0f0f0; }
+  .main__header {
+    padding: 1.5625rem 0; }
+  .main__nav {
+    list-style-type: none;
+    padding-left: 0; }
+  .main__item.active .main__link {
+    color: #59b68b; }
+  .main__link {
+    color: #000000;
+    transition: color .15s;
+    padding: 0.5rem; }
+  .main__link:hover {
+    color: #59b68b;
+    text-decoration: none; }
+  .main__content__nav-active {
+    font-weight: 700;
+    margin-bottom: 1.875rem; }
+  .main__content__ul {
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-left: 0;
+    list-style-position: inside; }
+  .main__case__item {
+    background: url("../img/reishunger_thmb.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    padding: 9.375rem 0;
+    height: 100%;
+    color: #ffffff;
+    position: relative;
+    cursor: pointer; }
+    .main__case__item-text {
+      position: relative;
+      z-index: 10; }
+    .main__case__item:after {
+      content: '';
+      display: block;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      position: absolute;
+      background: #2a1c47;
+      transition: all 0.6s; }
+    .main__case__item:hover:after {
+      opacity: 0.6; }
+  .main__case .container div:nth-of-type(1) div:nth-of-type(2) .main__case__item:after {
+    background: #47967e; }
+  .main__case .container div:nth-of-type(2) div:nth-of-type(1) .main__case__item:after {
+    background: #e83e33; }
+  .main__case .container div:nth-of-type(2) div:nth-of-type(2) .main__case__item:after {
+    background: #85af30; }
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif; }

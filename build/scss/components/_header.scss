@@ -1,0 +1,41 @@
+#header {
+
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &-brand {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &-toggler {
+      border: none;
+      outline: none;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+
+      transition: background-color 0.4s;
+      
+      .nav-link {
+        padding: 1.5625rem 0.9375rem;
+        color: #ffffff;
+      }
+
+      .btn-outline-secondary {
+        border-color: #ffffff;
+        color: #ffffff;
+      }
+      &:hover {
+        background-color: #5cb68c;
+      }
+    }
+    .nav-item.active {
+      background-color: #5cb68c;
+      height: calc(100% + 1rem);
+    }
+  }
+}
